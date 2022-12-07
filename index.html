@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me | J'sen</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href=
+    "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://fonts.cdnfonts.com/css/neues-bauen" rel="stylesheet">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="HideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="">SKILLS</a></li>
+                    <li><a href="#album">ALBUM</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="ShowMenu()"></i>
+        </nav>
+
+    <div class="text-box">
+        <h1>Hi i'm J'sen</h1>
+        <p>A computer science Student at Nanyang Technological University<br>
+            and an aspiring landscape photographer</p>
+
+        <div class="wrapper">
+            <a class="button" href="https://github.com/Jaysenso" style="color: white; text-decoration: none;">
+                <div class="icon"><i class="fa-brands fa-github"></i></div>
+                <span> Github</span>
+            </a>
+
+            <a class="button" href="https://www.instagram.com/notjustsen/" style="color: white; text-decoration: none;">
+                <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+                <span>Instagram</span>
+            </a>
+            <a class="button" href="https://www.linkedin.com/in/j-sen-ong-6589a520a/" style="color: white; text-decoration: none;">
+                <div class="icon"><i class="fa-brands fa-linkedin"></i></div>
+                <span>LinkedIn</span>
+            </a>
+
+        </div>
+    </div>
+
+</section>
+
+<!----About------->
+<section id ="about">
+    <div class = "about-wrapper">
+        <div class = "about-left">
+            <img src = "images/image  (1).jpg" alt = "about image">
+        <div class = "about-left-content">
+            <div>
+              <div class = "shadow">
+                <div class = "about-img">
+                  <img src = "images/personal photo.jpg" alt = "about image">
+                </div>
+              </div>
+  
+              <h2>J'sen Ong</h2>
+              <h3>Y1 Computer Science</h3>
+            </div>
+  
+            <ul class = "icons">
+              <li><i class = "fab fa-github"></i></li>
+              <li><i class = "fab fa-instagram"></i></li>
+              <li><i class = "fab fa-linkedin"></i></li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class = "about-right">
+          <h1>hi<span>!</span></h1>
+          <h2>Here's who I am & what I do</h2>
+          <div class = "about-btns">
+            <button type = "button" class = "btn btn-pink">resume</button>
+            <button type = "button" class = "btn btn-white">projects</button>
+          </div>
+  
+          <div class = "about-para">
+            <p>My passion is in the arts and technology.
+                My dream is to create beautiful real-world applications and technology.</p>
+            <p>I believe in the soon to boom industry of the new technology realities and wish to contribute to it effectively!</p>
+
+          </div>
+        </div>
+      </div>
+  
+</section>
+<section class="skill">
+    <h1>SKILLS & PROJECTS</h1>
+    <p align="center">
+        <a href="https://skillicons.dev">
+          <img src="https://skillicons.dev/icons?i=py,c,html,css" />
+        </a>
+      </p>
+</section>
+
+    <section id="album">      
+        <h1 id="header">ALBUM</h1>
+            <div class="gallery">    
+                <div class="big-stretch"><img src="images/image  (19).jpg" alt=""></div>
+                <div class="v-stretch"><img src="images/image  (2).jpg" alt=""></div>
+                <div><img src="images/image  (3).jpg" alt=""></div>
+                <div><img src="images/image  (4).jpg" alt=""></div>
+                <div class="v-stretch"><img src="images/image  (5).jpg" alt=""></div>
+                <div><img src="images/image  (6).jpg" alt=""></div>
+                <div class="v-stretch" ><img src="images/image  (7).jpg" alt=""></div>
+                <div><img src="images/image  (8).jpg" alt=""></div>
+                <div class="v-stretch"><img src="images/image  (9).jpg" alt=""></div>
+                <div class="big-stretch"><img src="images/image  (10).jpg" alt=""></div>
+                <div><img src="images/image  (11).jpg" alt=""></div>
+                <div><img src="images/image  (12).jpg" alt=""></div>
+                <div class="h-stretch"><img src="images/image  (13).jpg" alt=""></div>
+                <div><img src="images/image  (14).jpg" alt=""></div>
+                <div class="v-stretch"><img src="images/image  (15).jpg" alt=""></div>
+                <div><img src="images/image  (16).jpg" alt=""></div>
+                <div class="h-stretch"><img src="images/image  (17).jpg" alt=""></div>
+                <div class="big-stretch"><img src="images/image  (18).jpg" alt=""></div>
+                <div><img src="images/image  (1).jpg" alt=""></div>
+        </div>
+</section>
+
+<!-------Javascript for Toggle Menu------>
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function ShowMenu(){
+        navLinks.style.right = "0";
+    }
+    function HideMenu(){
+    navLinks.style.right = "-250px";
+    }
+</script>
+
+</body>
+</html> 
