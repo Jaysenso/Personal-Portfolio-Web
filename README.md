@@ -1,2 +1,2 @@
 # portfolioweb
-Personal Web : https://jaysenso.github.io/Jsen/
+Personal Web : https://jaysenso.github.io/Personal-Portfolio-Web/
